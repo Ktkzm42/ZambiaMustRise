@@ -1,76 +1,92 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header styling */
 header {
-  background: #000;
-  color: #fff;
-  padding: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #006600; /* Rich green from the Zambian flag */
+  color: white;
 }
 
+/* Align h1 and flag nicely */
 header h1 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-nav {
   display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
+  align-items: center;
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-.section-label {
-  background: #000;
-  color: #fff;
-  padding: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.music-card {
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  background: #f8f8f8;
-}
-
-.music-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.music-info {
-  padding: 15px;
-}
-
-.music-info h2 {
+  gap: 1rem; /* space between flag and text */
   margin: 0;
-  font-size: 1.2em;
+}
+
+/* Flag icon styling */
+.flag-icon {
+  width: 64px; /* Sharp size for 4K */
+  height: auto;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Nav links styling */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd00; /* Bright gold from the Zambian flag */
+}
+
+/* Section label styling */
+.section-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 2rem 1rem 2rem;
+  color: #006600;
+  border-left: 5px solid #ffdd00;
+  padding-left: 0.75rem;
+}
+
+/* Music card styling */
+.music-card {
+  background: white;
+  max-width: 800px;
+  margin: 0 2rem 2rem 2rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Music info text */
+.music-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #006600;
 }
 
 .music-info p {
-  margin: 5px 0;
-  font-size: 0.9em;
-  color: #555;
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
 }
 
+/* Footer styling */
 footer {
-  background: #000;
-  color: #fff;
+  background-color: #006600;
+  color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
+  padding: 1rem 0;
+  font-size: 1rem;
+  margin-top: 4rem;
+  }
